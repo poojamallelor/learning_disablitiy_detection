@@ -1,0 +1,36 @@
+.liquid-ether-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  background: transparent;
+}
+
+.liquid-ether-container canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.liquid-ether-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: auto;
+}
+
+.liquid-ether-content-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+/* Ensure smooth rendering */
+canvas {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  image-rendering: -webkit-optimize-contrast;
+}
